@@ -14,3 +14,8 @@ NB: this program expects there to be one document (in json) per line, in the for
 {k: foo, v: bar}
 {k: 123, v: xyz}
 ```
+
+## Override Database connection
+By default the application will connect to a local MongoDB on port 27017. You can however ovveride this by adding
+```--spring.data.mongodb.uri=mongodb://user:password@server.url:port/database```
+to the program arguments when you run the application
